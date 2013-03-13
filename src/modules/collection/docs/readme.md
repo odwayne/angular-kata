@@ -1,0 +1,1 @@
+IndexedCollection factory is a specialized collection

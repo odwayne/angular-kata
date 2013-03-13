@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bootstrapDemoApp" id="top">
+
+<head>
+    <meta charset="utf-8">
+    <title>Angular Kata - Reusable modules</title>    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/<%= ngversion %>/angular.min.js"></script>
+    <script src="angular-kata-tpls-<%= version%>.min.js"></script>    
+    <script src="assets/app.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/<%= bsversion %>/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/demo.css"/>
+    <link rel="author" href="https://github.com/thiagofelix/angular-kata/graphs/contributors">
+</head>
+
+<body class="ng-cloak" ng-controller="MainCtrl">
+    <!-- <header class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+        <div class="container">
+          <div class="dropdown pull-left">
+            <a class="brand dropdown-toggle" role="button" data-toggle="dropdown" href="#"> 
+              Angular Kata          
+            </a>        
+          <div class="nav-collapse">
+            <ul class="nav">
+               <li>
+                   <a href="#" role="button" class="dropdown-toggle">Modules <b class="caret"></b></a>
+                   <ul class="dropdown-menu">
+                       <% modules.forEach(function(module) {  %>
+                       <li><a href="#<%= module.name %>"><%= module.displayName %></a></li>
+                       <% });  %>
+                   </ul>
+               </li>           
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header> -->
+    
+
+    <!--- <div role="main">
+
+        <header class="hero-unit" id="overview">
+            <div class="container">
+                <h1>
+                    Angular Kata
+                </h1>
+
+                <p>Reusable modules written in pure <strong><a href="http://angularjs.org">AngularJS</a></p>
+
+                <p class="btn-group">
+                    <a class="btn" href="https://github.com/thiagofelix/angular-kata">
+                      <i class="icon-github"></i> Code on Github
+                    </a>                
+                </p>
+            </div>
+            <div class="bs-docs-social">
+                <div class="container">
+                    <ul class="bs-docs-social-buttons">
+                        <li>
+                            <iframe src="http://ghbtns.com/github-btn.html?user=thiagofelix&repo=angular-kata&type=watch&count=true"
+                                    allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+                        </li>
+                        <li>
+                            <iframe src="http://ghbtns.com/github-btn.html?user=thiagofelix&repo=angular-kata&type=fork&count=true"
+                                    allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/share" class="twitter-share-button"
+                               data-hashtags="angularjs">Tweet</a>
+                            <script>!function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");</script>
+                        </li>
+                        <li>
+                            
+                            <div class="g-plusone" data-size="medium"></div>
+
+                            
+                            <script type="text/javascript">
+                                (function () {
+                                    var po = document.createElement('script');
+                                    po.type = 'text/javascript';
+                                    po.async = true;
+                                    po.src = 'https://apis.google.com/js/plusone.js';
+                                    var s = document.getElementsByTagName('script')[0];
+                                    s.parentNode.insertBefore(po, s);
+                                })();
+                            </script>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">        
+
+        <% modules.forEach(function(module) { %>
+          <section id="<%= module.name %>">
+            <div class="page-header">
+              <h1><%= module.displayName %><small>
+                  (<a target="_blank" href="https://github.com/thiagofelix/angular-kata/tree/master/src/<%= module.name %>">kata.<%= module.name %></a>)
+              </small></h1>
+            </div>
+            <div class="row">
+                <div class="span6">
+                    <%= module.html %>
+                </div>
+                <div class="span6">
+                    <%= module.description %>
+                </div>
+            </div>                
+          </section>
+          <script><%= module.js %></script>
+        <% }); %>
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>Designed and built by <a href="https://github.com/dclick?tab=members" target="_blank">DClick team</a> and <a href="https://github.com/thiagofelix/angular-kata/graphs/contributors" target="_blank">contributors</a>.</p>
+            <p>Code licensed under <a href="https://github.com/thiagofelix/angular-kata/blob/master/LICENSE">MIT License</a>.</p>
+            <p><a href="https://github.com/thiagofelix/angular-kata/issues?state=open">Issues</a></p>
+        </div>
+    </footer> --->
+    <script src="assets/rainbow.js"></script>
+    <script src="assets/rainbow-generic.js"></script>
+    <script src="assets/rainbow-javascript.js"></script>
+    <script src="assets/rainbow-html.js"></script>
+
+</body>
+</html>
